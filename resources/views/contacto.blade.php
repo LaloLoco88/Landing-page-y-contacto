@@ -15,8 +15,8 @@
     <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contactame</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Contactanos</h2>
+                    <h3 class="section-subheading text-muted">Si deseas saber algo más, contactanos, sin compromiso!</h3>
                 </div>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
@@ -31,29 +31,29 @@
                             <div class="form-group">
                                 <!-- Name input-->
                                 <label for="name">Nombre</label>
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" value="{{$nombre}}"/>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <input class="form-control" id="name" type="text" placeholder="Tu Nombre *" data-sb-validations="required" value="{{$nombre}}"/>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
                                 <label for="email">Email</label>
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" value="{{$email}}"/>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" id="email" type="email" placeholder="Tu Email *" data-sb-validations="required,email" value="{{$email}}"/>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Se requiere un email.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
                             </div>
                             <div class="form-group mb-md-0">
                                 <!-- Phone number input-->
                                 <label for="phone">Telefono</label>
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" id="phone" type="tel" placeholder="Tu Numero Telefonico *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Se requiere un numero telefonico.</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
                                 <label for="message">Comentario</label>
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" id="message" placeholder="Tu mensaje *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un comentario.</div>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar mensaje</button></div>
                 </form>
             </div>
         </section>
@@ -83,15 +83,15 @@
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Tienda Lalo! 2022</div>
                     <div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="link-dark text-decoration-none me-3" href="#!">Politicas de privacidad</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terminos de uso</a>
                     </div>
                 </div>
             </div>
