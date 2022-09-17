@@ -21,4 +21,12 @@ class SitioController extends Controller
         }
         return view('contacto', compact('codigo', 'nombre', 'email'));
     }
+
+    public function recibeFormContacto(Request $request){
+        $request->validate([
+            'nombre'=>'required|max:255|min:3',
+            'email'=>['required','email'],
+            'comentario'=>'required|max:255|min:10',
+        ]);
+    }
 }
