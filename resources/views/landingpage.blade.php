@@ -31,8 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Platillos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">Historia</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Cocineros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Recervar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>

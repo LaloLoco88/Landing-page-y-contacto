@@ -2,18 +2,18 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>CONTACTO - Jesus Martinez</title>
+        <title>CONTACTO</title>
         <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
     </head>
     <body>
         <header>
             <div class="nav">
-                <a href="index.html">PAGINA PRINCIPAL</a>
-                <a href="formulario.html">FORMULARIO</a>
+                <a href="/landingpage">LANDING PAGE</a>
+                <a href="/contacto">CONTACTO</a>
             </div>
         </header>
         <h1>Contacto</h1>
-        @if($errors->any())
+        <!-- @if($errors->any())
             <div class="alert alert-danger">
                 <ul>
                     @foreach($errors->all() as $error)
@@ -21,16 +21,18 @@
                     @endforeach
                 </ul>
             </div>
-        @endif
+        @endif -->
         <div class="form">
             <form action="/recibe-form-contacto" method="POST">
                 @csrf
-                <label for="nombre"><input type="text" id="nombre" class="datos" name="nombre" value="{{ $nombre }}">Nombre</label><br/>
+                <label for="nombre">Nombre</label><br/>
+                <input type="text" id="nombre" class="datos" name="nombre" value="{{ $nombre }}"></br>
                 @error('nombre')
                     <i>{{ $message }}</i>
                 @enderror
                 <br/>
-                <label for="email"><input type="text" id="email" class="datos" name="email" value="{{ $email }}">Email</label><br/>
+                <label for="email">Email</label><br/>
+                <input type="text" id="email" class="datos" name="email" value="{{ $email }}"></br>
                 @error('email')
                     <i>{{ $message }}</i>
                 @enderror
@@ -38,7 +40,8 @@
                 <!-- <label for="passw"><input type="password" id="passw" class="datos" name="pass">Contraseña</label><br/>
                 <label for="gen">Genero: <br/><input type="radio" id="gen" name="genero">Hombre</label>
                 <label for="gen"><input type="radio" id="gen" name="genero">Mujer</label><br/>         -->
-                <label for="comentario">Comentario:<br/><textarea name="comentario" id="comentario" class="datos" cols="30" rows="10" placeholder="Escribe aquí tu comentario..."></textarea></label><br/>
+                <label for="comentario">Comentario</label><br/>
+                <textarea name="comentario" id="comentario" class="datos" cols="30" rows="10" placeholder="Escribe aquí tu comentario..."></textarea><br/>
                 @error('comentario')
                     <i>{{ $message }}</i>
                 @enderror
