@@ -26,22 +26,19 @@
             <form action="/recibe-form-contacto" method="POST">
                 @csrf
                 <label for="nombre">Nombre</label><br/>
-                <input type="text" id="nombre" class="datos" name="nombre" value="{{ $nombre }}"></br>
+                <input type="text" id="nombre" class="datos" name="nombre" value="{{ $nombre ?? ''}} {{ old('nombre') }}"></br>
                 @error('nombre')
                     <i>{{ $message }}</i>
                 @enderror
                 <br/>
                 <label for="email">Email</label><br/>
-                <input type="text" id="email" class="datos" name="email" value="{{ $email }}"></br>
+                <input type="text" id="email" class="datos" name="email" value="{{ $email ?? '' }} {{ old('email') }}"></br>
                 @error('email')
                     <i>{{ $message }}</i>
                 @enderror
                 <br/>
-                <!-- <label for="passw"><input type="password" id="passw" class="datos" name="pass">Contraseña</label><br/>
-                <label for="gen">Genero: <br/><input type="radio" id="gen" name="genero">Hombre</label>
-                <label for="gen"><input type="radio" id="gen" name="genero">Mujer</label><br/>         -->
                 <label for="comentario">Comentario</label><br/>
-                <textarea name="comentario" id="comentario" class="datos" cols="30" rows="10" placeholder="Escribe aquí tu comentario..."></textarea><br/>
+                <textarea name="comentario" id="comentario" class="datos" cols="30" rows="10" placeholder="Escribe aquí tu comentario...">{{ old('comentario') }}</textarea><br/>
                 @error('comentario')
                     <i>{{ $message }}</i>
                 @enderror
